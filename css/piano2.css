@@ -1,0 +1,19 @@
+/*police utiilsé sur la page*/
+p, ul{
+	 font-family: 'Poppins', sans-serif;
+}
+
+/* style du titre*/
+h1 {
+	text-align: center;
+}
+
+/* style du body*/
+body {
+	margin-left: 25px;
+}
+
+/* style du lien de retour*/
+#retour {
+	font-weight: bold;
+}

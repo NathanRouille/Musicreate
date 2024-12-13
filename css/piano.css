@@ -1,0 +1,170 @@
+body {
+    overflow: hidden;
+    background: #16E3CD
+}
+/*position du piano*/
+svg {
+    left: 0;
+    bottom: -44vh;
+    position: absolute;
+    width: 100%;
+    transition: all 1.3s ease;
+    
+    z-index: 10;
+}
+/*animation de déplacement du piano*/
+svg:hover {
+    bottom: 10px;
+    
+    transition: all 1.3s ease;
+}
+
+/* tansition couleur touches*/
+path {
+    transition: all 0.3s ease;
+}
+
+/*effet sur le tableau qui sert de partition*/
+table {
+    margin: 10px 0 20px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* boutons positionet transition*/
+input {
+    transition: filter 0.5s ease;
+    margin: 40px 0 1px 10px;
+}
+
+/*effet sur les bordures du tableau*/
+table * {
+    border: 1px solid black;
+    height: 20px;
+}
+
+/*effet sur les bordures du tableau*/
+th {
+    width: 50px;
+}
+
+/* pour que les boutons n'aient pas de bordures */
+*:focus {
+    outline: none;
+}
+
+/*mise en place de la taille et de la position de la barre de lecture*/
+#barreDeLecture {
+    position: absolute;
+    height: 277px;
+    width: 4px;
+    background: red;
+    
+    left: 61px;
+    top: 114px;
+}
+
+/*animation de la barre de lecture à 60 bpm*/
+#barreDeLecture.reading60 {
+    left: 99%;
+    
+    transition: left 32s linear;
+}
+
+/*animation de la barre de lecture à 90 bpm*/
+#barreDeLecture.reading90 {
+    left: 99%;
+    
+    transition: left 21.4s linear;
+}
+
+/*animation de la barre de lecture à 120 bpm*/
+#barreDeLecture.reading120 {
+    left: 99%;
+    
+    transition: left 16s linear;
+}
+
+/*animation de la barre de lecture à 140 bpm*/
+#barreDeLecture.reading140 {
+    left: 99%;
+    
+    transition: left 13.7s linear;
+}
+
+/*position et mise en forme du titre du site*/
+h1 {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*syle apporté au choix d'instrument*/
+select option[value="piano"]{
+    background:#16E3CD;
+}
+
+select option[value="guitar"]{
+    background:#F8BA47;
+}
+
+select option[value="flute"]{
+    background:#F1F115;
+}
+
+select option[value="bass"]{
+    background:#62F224;
+}
+
+/*effet de noir quand la souris passe sur une des cases du tableau*/
+td:hover{
+    background:slategray;
+}
+
+/*position liste bpm*/
+#bpm {
+    position: absolute;
+    top: 77px;
+    left: 305px;
+}
+
+/*position label liste bpm*/
+#bpmLabel {
+    position: absolute;
+    top: 57px;
+    left: 265px;
+}
+
+/*position liste instruments*/
+#instrument-select {
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+
+/*position label liste instruments*/
+#instrumentLabel {
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+/* style appliqué aux labels*/
+label {
+    font-weight:bold;
+}
+
+/* style appliqué aux paragraphes*/
+a {
+    position: absolute;
+    bottom: 200px;
+    right: 40px;
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+}
