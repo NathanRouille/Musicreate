@@ -54,8 +54,8 @@ An interactive virtual piano that lets you play, record, and replay music using 
 - Use the **Clear** button to erase the current recording : ![Clear](images/delete.png)
 
 ### Customization
-- Select an instrument from the dropdown menu.
 - Choose a tempo using the BPM (Beats Per Minute) selector : ![BPM Selector](images/metronome.png)
+- Select an instrument from the dropdown menu.
 
 ## Contributing
 
